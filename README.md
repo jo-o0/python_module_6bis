@@ -1,4 +1,4 @@
-# Code Nexus — The Whole Module, Bestie Edition 🌙
+# Code Nexus
 
 > One Python module, five exercises, one single idea repeated at five depths:
 > **capability over identity.** Ask what something can *do*, never what it *is*.
@@ -7,7 +7,7 @@
 
 ---
 
-## PART 1 — Definitions (the language of the whole module)
+## PART 1 — Definitions
 
 Everything below shows up in every exercise. Learn these once, use them five times.
 
@@ -76,7 +76,7 @@ Everything below shows up in every exercise. Learn these once, use them five tim
 
 ---
 
-## PART 2 — The Guide (exercise by exercise)
+## PART 2
 
 ### The arc of the module
 
@@ -246,41 +246,6 @@ Because acceptance is structural, not nominal. The plugin never says "I am an Ex
 
 **ABC or Protocol — which one when?**
 Building a family that must share a design, where forgetting a method should crash early at instantiation? ABC. Offering an interface the outside world can implement freely, where forgetting a method should fail at type-check time instead? Protocol. Sign the contract vs prove it.
-
----
-
-## PART 4 — Run Cheatsheet ⚡
-
-```bash
-# exercise 0 — processors, validation, exceptions, FIFO output
-python3 data_processor.py
-
-# exercise 1 — the stream: routing, stats, totals vs remaining
-python3 data_stream.py
-
-# exercise 2 — the pipeline: plugins, CSV/JSON export, drain guard
-python3 data_pipeline.py
-
-# exercise 3 — creatures: factories, capabilities, the fight
-python3 battle.py
-python3 capacitor.py
-
-# exercise 4 — the tournament: strategies, capability checks, aborts
-python3 tournament.py
-```
-
-**Self-check tables (the stats you should see):**
-
-Ex 1: after both batches → Numeric 8/8, Text 3/3, Log 2/2 → after consuming 3/2/1 → **totals frozen** 8/3/2, remaining 1/1/1.
-
-Ex 2: after CSV export (nb=3) → 4/1, 3/0, 2/0 → after batch 2 → 11/8, 7/4, 4/2 → after JSON export (nb=5) → 11/3, 7/0, 4/0. Log always gives fewer than asked — that's the drain guard, not a bug.
-
-**Static checking (your forever friends):**
-```bash
-python3 -m flake8 file.py    # style: 79 chars, spacing, unused names
-mypy file.py                 # types: catches contract violations pre-run
-```
-Missing type hints are not cosmetics — every parameter, variable and return gets one. `Any` is for genuinely unknown input only.
 
 ---
 
