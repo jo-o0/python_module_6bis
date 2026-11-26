@@ -257,7 +257,3 @@ Building a family that must share a design, where forgetting a method should cra
 - [Design Patterns: Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory)
 - [Design Patterns: Strategy](https://refactoring.guru/design-patterns/strategy)
 - Mixture-of-Experts explained: any modern MoE paper or blog — the DataStream is a hand-written one.
-
----
-
-*Made with love and a concerning amount of "innit" jokes. Capability over identity, bestie — always. 💅*
