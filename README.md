@@ -249,7 +249,7 @@ Building a family that must share a design, where forgetting a method should cra
 
 ---
 
-## PART 5 — References 📚
+## References 📚
 
 - [Python docs: abc — Abstract Base Classes](https://docs.python.org/3/library/abc.html)
 - [Python docs: typing — Support for type hints](https://docs.python.org/3/library/typing.html) (Protocol lives here)
